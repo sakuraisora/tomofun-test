@@ -3,6 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --sakura-pink: 255, 183, 197;
+  --sakura-pink-light: 255, 218, 224;
+  --sakura-pink-dark: 219, 127, 142;
+  --cream: 255, 248, 240;
+  --brown: 121, 85, 72;
+  --brown-light: 161, 136, 127;
+  --text-dark: 51, 51, 51;
 }
 
 @theme inline {
@@ -14,7 +21,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffb7c5;
     --foreground: #ededed;
   }
 }
@@ -23,4 +30,46 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-sakura {
+  background-color: rgb(var(--sakura-pink));
+}
+
+.bg-sakura-light {
+  background-color: rgb(var(--sakura-pink-light));
+}
+
+.bg-sakura-dark {
+  background-color: rgb(var(--sakura-pink-dark));
+}
+
+.bg-cream {
+  background-color: rgb(var(--cream));
+}
+
+.text-sakura {
+  color: rgb(var(--sakura-pink));
+}
+
+.text-sakura-dark {
+  color: rgb(var(--sakura-pink-dark));
+}
+
+.text-brown {
+  color: rgb(var(--brown));
+}
+
+.text-brown-light {
+  color: rgb(var(--brown-light));
+}
+
+.border-sakura {
+  border-color: rgb(var(--sakura-pink));
+}
+
+.shadow-sakura {
+  box-shadow:
+    0 4px 6px -1px rgba(var(--sakura-pink), 0.3),
+    0 2px 4px -1px rgba(var(--sakura-pink), 0.2);
 }
